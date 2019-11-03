@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+
+*{
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    margin: 200px auto;
+    background-color: rgba(0, 0, 0, 0.28);
+    width:  64%;
+}
+
+.container-table {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+
+.container-table h1 {
+    position: relative;
+    color: rgba(204, 204, 204, 0.52);
+    font-size: 15px;
+}
+
+.info-total {
+    width: 99.60%;
+    padding:3px;
+    font-size: 12px; 
+    color:#fff;
+}
+.info-total span {
+    color: rgba(204, 204, 204, 0.52);
+}
+
+.player-inventario {
+    width: 500px;
+    height: 400px;
+    margin-left: 100px;
+}
+.container-item-tudo{
+    overflow: auto;
+    height: 350px;
+}
+
+.inventario-proximo {
+    height: 400px;
+    width: 500px;
+}
+
+.focus{
+    position: relative;
+    width: 100px;
+    padding-bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.28);
+    border-radius: 10px;
+    margin: 2px;
+    margin-bottom: 10px;
+    float: left;
+    left: 5%;
+    display: inline-flex;
+}
+
+.item{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+.item:hover{
+    background-color: rgba(0, 0, 0, 0.828);
+}
+
+.nome-fundo-inv {
+    background-color: rgba(0, 0, 0, 0.28);
+    width: 90px;
+    height: 30px;
+    padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#quantidade {
+    position: relative;
+    top: -7px;
+    right: -50px;
+    text-align: center;
+    font-size: 15px;
+    max-width: 50px;
+    color: #ccc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr;
+}
+
+#nome {
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+    color: #ccc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr;
+}
+
+#item-img{
+    position: relative;
+    top: -10px;
+    height: 40px;
+    width: 40px;
+}
+
+.itens-proximo {
+    position: relative;
+    width: 300px;
+    padding: 2px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    background-color: rgba(0, 0, 0, 0.267);
+    right: -95px;
+    top: 10px;
+}
+
+.itens-proximo:hover {
+    background-color: rgba(0, 0, 0, 0.828);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.28);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+#nome-proximo {
+    color: #ccc;
+    text-align: left !important;
+    
+}
+
+#item-img-proximo{
+    margin: 3%;
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+
+.quantidade-proximo{
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.267);
+    color: #ccc;
+    margin-top: -40px;
+    margin-right: 15px;
+    float:right;
+}
+
+.actions {
+    display: table-column;
+    position: relative;
+    margin-top: 25px;
+}
+
+.actions button {
+    padding: 5px;
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.28);
+    border: 0;
+    width: 65px;
+    margin-bottom: 3%;
+}
+
+.actions input {
+    background-color: rgba(0, 0, 0, 0.28);
+    color:#ccc;
+    border:0;
+    width: 55px;
+    margin-bottom: 3%;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-buttons button:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+.container-buttons:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+button {
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.4s ease-in;
+  }
+  button span[class^='ion'] {
+    position: relative;
+  }
+  button:before {
+    content: '';
+    background-color: aliceblue;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: scale(0.001, 0.001);
+            transform: scale(0.001, 0.001);
+  }
+  button:focus {
+    outline: 0;
+    color: #fff;
+  }
+  button:focus:before {
+    -webkit-animation: effect_dylan 0.8s ease-out;
+            animation: effect_dylan 0.8s ease-out;
+  }
+  @-webkit-keyframes effect_dylan {
+    50% {
+      -webkit-transform: scale(1.5, 1.5);
+              transform: scale(1.5, 1.5);
+      opacity: 0;
+    }
+    99% {
+      -webkit-transform: scale(0.001, 0.001);
+              transform: scale(0.001, 0.001);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(0.001, 0.001);
+              transform: scale(0.001, 0.001);
+      opacity: 1;
+    }
+  }
+  @keyframes effect_dylan {
+    50% {
+      -webkit-transform: scale(1.5, 1.5);
+              transform: scale(1.5, 1.5);
+      opacity: 0;
+    }
+    99% {
+      -webkit-transform: scale(0.001, 0.001);
+              transform: scale(0.001, 0.001);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(0.001, 0.001);
+              transform: scale(0.001, 0.001);
+      opacity: 1;
+    }
+  }
+
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+        
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    
+}
+input[type=number]::-webkit-input-placeholder{
+    color:#ccc;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: bold;
+    font-size: 10px;
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}     
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+    
+::-webkit-scrollbar-track {
+    background-color:transparent ;
+}
+    
+::-webkit-scrollbar-thumb {
+    background: #6d6d6d96; 
+    border-radius: 5px;
+}
